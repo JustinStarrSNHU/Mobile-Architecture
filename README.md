@@ -1,5 +1,16 @@
 # Mobile-Architecture
- 
+
+Project One - Located in M3 Directory<br>
+Project Two - Located in M5 Directory<br>
+Project Three - Located in M7 Directory<br><br>
+
+M1/ Users and Solutions<br>
+M2/ Goals and Users Milestone and user Components and Data
+M3/ Android Studio Introduction and Project One<br>
+M4/ UI Design<br>
+M5/ Simple Application and Project Two<br>
+M6/ Sensor Manager Application and documentation
+M7/ Final Project - Inventory Application and Application Launch Plan<br>
 
 - Briefly summarize the requirements and goals of the app you developed. What user needs was this app designed to address?
 
