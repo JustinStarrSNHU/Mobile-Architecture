@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddItemActivity">
+
+    <TextView
+        android:id="@+id/textViewAddItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="Add New Inventory Item"
+        android:textColor="@color/cobalt"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLoggedUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:hint="@string/logged_user"
+        android:gravity="center_horizontal"
+        android:textColor="@color/cobalt"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAddItemTitle" />
+
+
+    <TextView
+        android:id="@+id/textViewItemDescriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Item Description"
+        android:textColor="@color/cobalt"
+        android:gravity="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLoggedUser" />
+
+    <EditText
+        android:id="@+id/editTextItemDescription"
+        android:layout_width="248dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:hint="item description..."
+        android:inputType="text"
+        android:padding="5dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewItemDescriptionLabel" />
+
+    <TextView
+        android:id="@+id/textViewItemQuantityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Item Quantity"
+        android:textColor="@color/cobalt"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextItemDescription" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutItemQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="8"
+        app:layout_constraintTop_toBottomOf="@+id/textViewItemQuantityLabel"
+        tools:layout_editor_absoluteX="-50dp">
+
+        <ImageButton
+            android:id="@+id/itemQtyDecrease"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="Decreases item quantity by 1"
+            app:srcCompat="@drawable/decrease_item_quantity"
+            app:tint="@color/blush"
+            android:onClick="decreaseQuantityAddItem"/>
+
+
+        <EditText
+            android:id="@+id/editTextItemQuantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="0"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/itemQtyIncrease"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="Increases item quantity by 1"
+            app:srcCompat="@drawable/increase_item_quantity"
+            android:onClick="increaseQuantityAddItem"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="32dp"
+        android:text="Cancel"
+        android:textSize="16sp"
+        app:backgroundTint="@color/scarlet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutItemQuantity"
+        android:onClick="cancelAddItem"/>
+
+    <Button
+        android:id="@+id/addItemButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:text="Add Item"
+        android:textSize="16sp"
+        app:backgroundTint="@color/fern"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutItemQuantity"
+        android:onClick="AddNewItemToInventory"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

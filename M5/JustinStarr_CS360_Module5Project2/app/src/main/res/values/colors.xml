@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="cobalt">#1338BE</color>
+    <color name="scarlet">#900D09</color>
+    <color name="merigold">#FCAE1E</color>
+    <color name="blush">#BC5448</color>
+    <color name="fern">#5DBB63</color>
+    <color name="yellow">#FFF200</color>
+</resources>

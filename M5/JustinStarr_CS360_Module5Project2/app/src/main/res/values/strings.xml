@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Justin.Starr_CS-360_Module-5-Project-2</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="action_register">Register</string>
+    <string name="column_item_description_heading">Item Description</string>
+    <string name="column_item_quantity_heading">Item Qty</string>
+    <string name="scrollview_description">Scrollview Description</string>
+    <string name="add_vector_description">Add Vector Description</string>
+    <string name="sms_vector_description">SMS Vector Description</string>
+    <string name="add_button_label">Add Item</string>
+    <string name="sms_button_label">SMS</string>
+    <string name="logged_user">User: %s</string>
+    <string name="total_items">Total Items</string>
+    <string name="register_activity_title">Register</string>
+    <string name="user_name">username...</string>
+    <string name="user_phone_number">phone number...</string>
+    <string name="user_email">email...</string>
+    <string name="user_pass">password...</string>
+    <string name="register_new_user_button">Register New User</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="edit_vector_description">Edit Vector Description</string>
+    <string name="row_item_desc_hint">Item Description</string>
+    <string name="row_item_qty_hint">Item Qty</string>
+    <string name="application_activity_title">Inventory Management System</string>
+    <string name="login_activity_title">Login</string>
+</resources>
